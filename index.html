@@ -1,0 +1,453 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!-- head -->
+<head>
+  <script>
+    (function () {
+        var a_idx = 0;
+        window.onclick = function (event) {
+            var a = new Array("✨", "🤖", "👩‍💻", "🎆", "🎉", "🎊", "🎦", "🎵", "💗", "💤", "🌈", "🌞");
+
+            var heart = document.createElement("b");
+            heart.onselectstart = new Function('event.returnValue=false');
+
+            document.body.appendChild(heart).innerHTML = a[a_idx];
+            a_idx = (a_idx + 1) % a.length;
+            heart.style.cssText = "position: fixed;left:-100%;";
+
+            var f = 16, 
+                x = event.clientX - f / 2, 
+                y = event.clientY - f,
+                c = randomColor(), 
+                a = 1,
+                s = 1.2; 
+
+            var timer = setInterval(function () { 
+                if (a <= 0) {
+                    document.body.removeChild(heart);
+                    clearInterval(timer);
+                } else {
+                    heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+                        c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+                        s + ");";
+
+                    y--;
+                    a -= 0.016;
+                    s += 0.002;
+                }
+            }, 15)
+
+        }
+        function randomColor() {
+
+            return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+            .random() * 255)) + ")";
+
+        }
+    }());
+
+  </script>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Xuchuan Huang  |  黄叙川</title>
+
+
+
+  <meta name="author" content="Xuchuan Huang">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" type="image/png" href="images/icon.jpg">
+</head>
+
+<!-- bib hide -->
+<script type="text/javascript">
+  function hideshow(which){
+  if (!document.getElementById)
+  return
+  if (which.style.display=="block")
+  which.style.display="none"
+  else
+  which.style.display="block"
+  }
+
+
+  </script>
+
+
+
+
+
+<!-- body -->
+<body>
+
+
+  <!-- self-intro --> 
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2%;width:55%;vertical-align:middle">
+              <p style="text-align:center">
+                <name> Xuchuan Huang | 黄叙川</name>
+                <!-- <span style="font-size:20px ">将鼠标指向这里:</span>
+                <a style="color:#3300FF; font-size:20px; font-style:italic " onMouseMove="move()" onMouseOut="return out();">将飞出一个标记</a> -->
+
+              </p>
+              <p style="text-align: justify">
+            
+                </intro>
+                <intro>I am a junior at <a href="https://yuanpei.pku.edu.cn/" target="_blank">
+                  <d>Yuanpei College</d></a> of <a href="https://english.pku.edu.cn/" target="_blank"><d>Peking University</d></a>. 
+                  I am currently advised by Prof. <a href="https://www.yangyaodong.com/" target="_blank">
+                    <d>Yaodong Yang</d></a> at <a href="https://pair-lab.com/" target="_blank"><d>PKU Alignment and Interaction Research Lab (PAIR) Lab</d></a>. 
+                  My currrent research interest lies in embodied AI, especially dexterous manipulation, with the goal of building general-purpose embodied agents to complete diverse tasks in real world.
+                  I am always enthusiastic about exploring new ideas and opportunities. Feel free to reach out if you'd like to connect or collaborate! 🤩
+                  </intro>
+              <p style="text-align:center">
+                <a href="hxc17866878887@stu.pku.edu.cn" target="_blank">E-mail</a> &nbsp/&nbsp
+                <!-- <a href="https://scholar.google.com/citations?user=k9i4IUsAAAAJ&hl=en" target="_blank">Google Scholar</a> &nbsp/&nbsp -->
+                <a href="https://github.com/HuangXuchuan" target="_blank">Github</a>&nbsp/&nbsp
+                <a href="images/WeChat.png" target="_blank">WeChat Account</a>&nbsp/&nbsp
+              </p>
+            </td>
+            <td style="padding:0%; width:26%; max-width:26%;"> 
+              <br>
+           
+              <img style="padding:1%; width:100%; max-width:80%;  display: block; margin-left: auto; margin-right: auto; " alt="profile photo" src="images/portrait.jpg">
+              <div style="text-align:center">
+                <style>
+                  .threesolid{
+                    font-size: 20px;
+                    font-family: cursive;
+                    color:#454545;
+                    text-shadow:0px 1px 0px #c0c0c0,
+                      0px 2px 0px #b0b0b0,
+                      0px 3px 0px #a0a0a0,
+                      0px 4px 0px #909090,
+                      0px 5px 10px rgba(0, 0, 0, .9);
+                  } 
+                  </style>
+              </div>
+            
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    </tr>
+  </tbody></table>
+
+  
+
+  <!-- Research -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <br>
+    <heading>Research</heading>
+    <br>
+    * equal contribution
+          <!-- <table style="border-collapse:separate; border-spacing:0px 35px;" cellspacing="8">
+          <tbody> -->
+
+    <!-- DexGraspVLA -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two">
+            <br>
+            <img src='images/DexGraspVLA.png' width="210">
+          </div>
+          <br>
+        </div>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://dexgraspvla.github.io/" target="_blank">
+          <papertitle><br>DexGraspVLA: A Vision-Language-Action Framework Towards General Dexterous Grasping</papertitle>
+        </a>
+        <br>
+        <a class="a2" href="https://ivan-zhong.github.io/" target="_blank">Yifan Zhong</a>*,
+        <a class="a2" href="https://huangxuchuan.github.io/" target="_blank"><strong>Xuchuan Huang</strong></a>*,
+        <a:focus>Ruochong Li</a:focus>,
+        <a class="a2" href="https://github.com/CeyaoZhang" target="_blank">Ceyao Zhang</a>,
+        <a class="a2" href="https://zero-lab-pku.github.io/personwise/liangyitao/" target="_blank">Yitao Liang</a>,
+        <a class="a2" href="https://www.yangyaodong.com/" target="_blank">Yaodong Yang</a>,
+        <a class="a2" href="https://cypypccpy.github.io/" target="_blank">Yuanpei Chen</a>
+        <br>
+        <em><strong>Under Review.</strong></em>
+        <br>
+        <a href="https://dexgraspvla.github.io/" target="_blank">Project Page</a>
+        /
+        <a href="https://arxiv.org/abs/2502.20900" target="_blank">Paper</a>
+        /
+        <a href="https://github.com/Psi-Robot/DexGraspVLA" target="_blank">Code</a>
+        /
+        <a href="https://www.youtube.com/watch?v=X0Sq7q-bfI8" target="_blank">Video</a>
+        <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Psi-Robot/DexGraspVLA" style="vertical-align: text-bottom;">
+        <p></p>
+        <p> DexGraspVLA is a hierarchical framework for general-purpose dexterous grasping, which achieves over 90% zero-shot success in diverse real-world scenarios. </p>
+      </td>
+    </tr>
+
+    <!-- ProgressGym -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two">
+            <br>
+            <img src='images/progressgym.png' width="220">
+          </div>
+          <br>
+        </div>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://arxiv.org/abs/2406.20087" target="_blank">
+          <papertitle><br>ProgressGym: Alignment with a Millennium of Moral Progress</papertitle>
+        </a>
+        <br>
+        <a class="a2" href="https://tianyiqiu.net/" target="_blank">Tianyi Qiu</a>*,
+        <a:focus>Yang Zhang</a:focus>*,
+        <a class="a2" href="https://huangxuchuan.github.io/" target="_blank"><strong>Xuchuan Huang</strong></a>,
+        <a:focus>Jasmine Xinze Li</a:focus>,
+        <a class="a2" href="https://jijiaming.com/" target="_blank">Jiaming Ji</a>,
+        <a class="a2" href="https://www.yangyaodong.com/" target="_blank">Yaodong Yang</a>
+        <br>
+        <em><strong>NeurIPS'24 Spotlight, Dataset & Benchmark Track.</strong></em>
+        <br>
+        <a href="https://arxiv.org/abs/2406.20087" target="_blank">Paper</a>
+        /
+        <a href="https://github.com/PKU-Alignment/ProgressGym" target="_blank">Code</a>
+        /
+        <a href="https://pku-alignment.github.io/ProgressGym/" target="_blank">Documentation</a>
+        /
+        <a href="https://huggingface.co/collections/PKU-Alignment/progressgym-666735fcf3e4efa276226eaa" target="_blank">Hugging Face</a>
+        <p></p>
+        <p> To empower progress alignment, ProgressGym is a benchmark for training AI to track, predict, and co-evolve with human moral progress. </p>
+      </td>
+    </tr>
+
+    <!-- TerraX -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two">
+            <br>
+            <img src='images/TerraX.png' width="220">
+          </div>
+          <br>
+        </div>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="http://poss.pku.edu.cn/terrax.html" target="_blank">
+          <papertitle><br> TerraX: Visual Terrain Classification Enhanced by Vision-Language Models</papertitle>
+        </a>
+        <br>
+        <a:focus>Hongze Li</a:focus>*,
+        <a class="a2" href="https://huangxuchuan.github.io/" target="_blank"><strong>Xuchuan Huang</strong></a>*,
+        <a:focus>Xinhai Chang</a:focus>*,
+        <a:focus>Jun Zhou</a:focus>,
+        <a class="a2" href="http://poss.pku.edu.cn/members/zhaohj/index.htm" target="_blank">Huijing Zhao</a>
+        <br>
+        <em><strong>Under Review.</strong></em>
+        <br>
+        <a href="http://poss.pku.edu.cn/terrax.html" target="_blank">Project Page</a>
+        <p></p>
+        <p> TerraX is a vision-language framework for terrain classification, featuring the TerraData dataset, TerraBench benchmark, and TerraCLIP model. </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" style="padding:20px; text-align:left; font-style:italic; font-size:16px;">
+        Thanks to some unexpected but fortunate collaborations, I've also been involved in a few projects in political science and computational social science, which offered a quite refreshing experience! 😃
+      </td>
+    </tr>
+
+    <!-- Israeli-Palestinian Conflict -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two">
+            <br>
+            <img src='images/Israeli-Palestinian-Conflict.png' width="220">
+          </div>
+          <br>
+        </div>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="" target="_blank">
+          <papertitle><br> When Chinese Social Media Meet the Israeli Palestinian Conflict: Opinion Leaders, Moral Emotions, and Cultural Distance</papertitle>
+        </a>
+        <br>
+        <a:focus>Cheng Tan</a:focus>,
+        <a class="a2" href="https://huangxuchuan.github.io/" target="_blank"><strong>Xuchuan Huang</strong></a>,
+        <a:focus>Zijie Yu</a:focus>,
+        <a class="a2" href="https://sites.google.com/view/yanjunliu" target="_blank">Yanjun Liu</a>
+        <br>
+        <em><strong>Under Review.</strong></em>
+        <br>
+        <em><strong><b><font color='red'>Grand Prize</font></b> in 32nd Challenge Cup of PKU.</strong></em>
+        <br>
+        <em><strong><b><font color='red'>1st Prize</font></b> in National Undergraduate Honors College Student Research and Innovation Competition.</strong></em>
+        <p></p>
+        <p> We analyze over 130,000 Weibo comments on the 2023 Israel-Palestine conflict to examine how public opinion forms and spreads in Chinese social media. It reveals how factors like verified accounts, moral framing, and cultural similarity shape sentiment dynamics in Chinese online discourse. </p>
+      </td>
+    </tr>
+
+    <!-- Black Myth: Wukong -->
+    <tr onmouseout="malle_stop()" onmouseover="malle_start()">
+      <td style="padding:20px;width:30%;vertical-align:middle">
+        <div class="one">
+          <div class="two">
+            <br>
+            <img src='images/black-myth-wukong.png' width="220">
+          </div>
+          <br>
+        </div>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="" target="_blank">
+          <papertitle><br> Global Emotions and Imaginations around Black Myth: Wukong: A Multilingual Analysis of Over 90, 000 Tweets</papertitle>
+        </a>
+        <br>
+        <a:focus>Cheng Tan</a:focus>,
+        <a class="a2" href="https://huangxuchuan.github.io/" target="_blank"><strong>Xuchuan Huang</strong></a>,
+        <a:focus>Zijie Yu</a:focus>,
+        <a class="a2" href="https://sites.google.com/view/yanjunliu" target="_blank">Yanjun Liu</a>
+        <br>
+        <em><strong>Under Review.</strong></em>
+        <br>
+        <p></p>
+        <p> We analyze 92,000+ multilingual tweets about Black Myth: Wukong to uncover how cultural, political, and emotional interpretations vary across linguistic communities. Using sentiment analysis and topic modeling, it highlights the complexities of global cultural exchange and digital geopolitics. </p>
+      </td>
+    </tr>
+
+    
+  </tbody></table>
+    
+  <!-- Services -->
+  <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr>
+        <br>
+        <heading>Services</heading>
+        <br>
+        <td style="padding:0px;width:100%;vertical-align:middle">
+          <p>
+            <li>Teaching Assistant: Fundamentals of Artificial Intelligence (Spring 2025, by Prof. <a href="https://ligechina.github.io/" target="_blank">Ge Li</a>)</li>
+            <p>
+            <li>Teaching Assistant: Introduction to Computation (Autumn 2024, by Prof. <a href="https://ligechina.github.io/" target="_blank">Ge Li</a>)</li>
+            <p></p>
+            <li>Teaching Assistant: Innovative Design of Internet Products (Spring 2023, in <a href="https://yuanpei.pku.edu.cn/" target="_blank">
+              <d>Yuanpei College</d></a>)</li>
+            <p>
+            <li>Monitor: Class 4, <a href="https://yuanpei.pku.edu.cn/" target="_blank">
+              <d>Yuanpei College</d></a> (2022-2023) </li>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <!-- Experience -->
+
+  <table width="100%" align="center" border="0" cellpadding="10"><tbody>
+      <br>
+          <heading>Experience</heading>
+      <br>
+
+      <tr>
+        <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/psibot.jpg", width="108"></td>
+        <td width="90%" valign="center">
+          <strong><a href="http://www.psibot.ai/" target="_blank"><papertitle>PKU-PsiBot Joint Lab</papertitle></a></strong>
+          <br> <em>2024.10 - Present</em>
+          <br> <strong>Research Intern</strong>
+          <br> Research Advisor: <a href="https://www.yangyaodong.com/" target="_blank">Yaodong Yang</a>, <a href="https://cypypccpy.github.io/" target="_blank">Yuanpei Chen</a> 
+        </td>
+      </tr> 
+
+      <tr>
+          <br>
+          <td style="padding-left:20px;padding-right:20px;width:20%;vertical-align:middle"><img src="images/PKU.png", width="108"></td>
+          <td width="90%" valign="center">
+            <strong><a href="https://english.pku.edu.cn/" target="_blank"><papertitle>Peking University (PKU)</papertitle></a></strong>
+            <br> <em>2022.09 - Present</em>
+            <br> <strong> Undergraduate Student</strong>
+            <br> Major:  Data Science and Artificial Intelligence
+          </td>
+      </tr>
+      
+        
+  </tbody></table>
+
+  <!-- Selected Awards and Honors -->
+  <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          <br>
+          <heading>Selected Awards</heading>
+          <p>
+            <li>2024: <strong>Beijing Natural Science Foundation for undergraduates</strong></li>
+          </p>
+          <p>
+            <li>2024: Peking University Tan Siu Lin Oversea Exchange Endowment For Undergraduates</li>
+          </p>
+          <p>
+            <li>2024: <strong>First Prize</strong> in National Undergraduate Honors College Student Research and Innovation Competition</li>
+          </p>
+          <p>
+            <li>2024: <strong>First Prize</strong> in Jiang Zehan Cup Mathematical Modelling Competition</li>
+          </p>
+          <p>
+            <li>2024: <strong>Grand Prize</strong> in 32nd Challenge Cup of Peking University</li>
+          </p>
+          <p>
+            <li>2024: Third Prize in Campus Programming Competition of Peking University</li>
+          </p>
+          <p>
+            <li>2024: Second Prize in Lanqiao Cup Competition.  </li>
+          </p>
+          <p>
+            <li>2023: First Prize in National College English Vocabulary Competition</li>
+          </p>      
+          <p>
+            <li>2023: Third Prize in Ubiquant Programming Competition</li>
+          </p>       
+          <p>
+            <li>2022: Peking University Freshman Scholarship</li>
+          </p>
+     
+        </td>
+      </tr>
+  </tbody></table>
+
+  <!-- Miscellaneous -->
+  <table style="width:90%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <br>
+          <heading>Miscellaneous</heading>
+          <p>
+            <li>I’ve been practicing Chinese brush calligraphy 🖌 for many years, with a particular love for regular script and clerical script in the style of Yan Zhenqing (颜真卿). I’ve been fortunate to receive several awards in calligraphy competitions 🏅.</li>
+            <br><li>I’m also an avid music listener 🎧 and an admirer of <a href="https://music.163.com/#/artist?id=5771" target="_blank">Vae Xu (许嵩)</a> 💫.</li>
+            <br><li>In my free time, I enjoy watching films 🎬, traveling ✈️, and hiking ⛰️.</li>
+          </p>
+        </td>
+      </tr>
+  </tbody></table>
+  
+  <!-- Aknowledgements -->
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr>
+      <!-- <br> -->
+      <!-- <br> -->
+      <hr>
+        <p style="text-align:center">
+          This homepage is designed based on <a href="https://jonbarron.info/">Jon Barron</a>'s website. 
+
+    
+        </p>
+      </td>
+      </tr>
+  </tbody></table>
+ 
+</body>
+</html>
